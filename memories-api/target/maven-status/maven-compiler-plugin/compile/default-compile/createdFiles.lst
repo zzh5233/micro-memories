@@ -1,0 +1,9 @@
+com\itzzh\springcloud\service\MemoryClientService.class
+com\itzzh\springcloud\service\UserClientService.class
+com\itzzh\springcloud\service\UserClientServiceFallbackFactory.class
+com\itzzh\springcloud\service\MemoryClientServiceFallbackFactory.class
+com\itzzh\springcloud\entities\User.class
+com\itzzh\springcloud\entities\Constant.class
+com\itzzh\springcloud\entities\Memory.class
+com\itzzh\springcloud\service\UserClientServiceFallbackFactory$1.class
+com\itzzh\springcloud\service\MemoryClientServiceFallbackFactory$1.class

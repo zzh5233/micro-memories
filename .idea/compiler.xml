@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="memories-api" />
+        <module name="memories-config-3344" />
+        <module name="memories-consumer-feign-80" />
+        <module name="memories-consumer-hystrix-dashboard" />
+        <module name="memories-consumer-memory-feign-80" />
+        <module name="memories-eureka-7001" />
+        <module name="memories-memory-8001" />
+        <module name="memories-provider-memory-8001" />
+        <module name="memories-provider-memory-hystrix-8001" />
+        <module name="memories-provider-user-8002" />
+        <module name="memories-provider-user-hystrix-8002" />
+        <module name="memories-user-8002" />
+        <module name="memories-zuul-gateway-9527" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="memories" target="1.8" />
+      <module name="memories-api" target="1.8" />
+      <module name="memories-config-3344" target="1.8" />
+      <module name="memories-consumer-80" target="1.8" />
+      <module name="memories-consumer-feign-80" target="1.8" />
+      <module name="memories-consumer-hystrix-dashboard" target="1.8" />
+      <module name="memories-consumer-memory-80" target="1.8" />
+      <module name="memories-consumer-memory-feign-80" target="1.8" />
+      <module name="memories-consumer-user-feign-80" target="1.8" />
+      <module name="memories-eureka-7001" target="1.8" />
+      <module name="memories-memory-8001" target="1.8" />
+      <module name="memories-provider-memory-8001" target="1.8" />
+      <module name="memories-provider-memory-hystrix-8001" target="1.8" />
+      <module name="memories-provider-user-8002" target="1.8" />
+      <module name="memories-provider-user-hystrix-8002" target="1.8" />
+      <module name="memories-user-8002" target="1.8" />
+      <module name="memories-zuul-gateway-9527" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

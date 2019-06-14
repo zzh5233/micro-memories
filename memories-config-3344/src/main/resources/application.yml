@@ -1,0 +1,13 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: memories-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zzh5233/memories-config.git #GitHub上面的git仓库名字
+
+

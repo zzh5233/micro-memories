@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>memories</title>
+    <link rel="stylesheet" th:href="@{/css/memories.css}" href="css/memories.css"/>
+    <link rel="stylesheet" th:href="@{/css/addMemoryForm.css}" href="css/addMemoryForm.css"/>
+    <link rel="stylesheet" th:href="@{/css/memoryDetail.css}" href="css/memoryDetail.css"/>
+
+    <script th:src="@{/js/jquery-1.12.4.js}" src="js/jquery-1.12.4.js"></script>
+    <script th:src="@{/js/memories.js}" src="js/memories.js"></script>
+    <!--<script th:src="@{/js/addMemory.js}" src="js/addMemory.js"></script>-->
+    <script th:inline="javascript">
+        $(function () {
+            var cols = ['#f5d76e','#f7ca18','#f4d03f','#ececec','#ecf0f1','#a2ded0'];
+            var stars = /*[[${#lists.size(memoryList)}]]*/ '100';
+            //遍历粒子
+            var memoryList = [[${memoryList}]];
+            //<![CDATA[
+            for (var i = 0; i < stars; i++) {
+                // alert([["[[${memoryList.get("+i+").memoryId}]]"]]);
+                var size = Math.random()*30+10;
+                var color = cols[parseInt(Math.random()*4)];
+                $('.memoryBox').prepend('<span id="'+memoryList[i].memoryId+'" style="transition: none; width: ' + size + 'px; height: ' + size + 'px; top: ' + Math.random()*100 + '%; left: ' + Math.random()*100 + '%; background: ' + color + '; box-shadow: 0 0 '+ Math.random()*10 +'px' + color + ';" onclick=memoryDetail() onmouseenter=changeStyle(id) onmouseleave=returnStyle(id)></span>');
+            };
+            //]]>
+            /*prepend() 方法在被选元素的开头插入指定内容。
+              box-shadow阴影(外阴影与外发光):阴影的X轴(可以使用负值)    阴影的Y轴(可以使用负值)    阴影模糊值（大小）    阴影的颜色
+            */
+            // //设置时间
+            // setTimeout(function(){
+            //     $('.memoryBox span').each(function(){
+            //         $(this).css('top', Math.random()*100 + '%').css('left', Math.random()*100 + '%');
+            //     });
+            // }, 1);
+            // //设置间隔
+            // setInterval(function(){
+            //     $('.memoryBox span').each(function(){
+            //         $(this).css('top', Math.random()*100 + '%').css('left', Math.random()*100 + '%');
+            //     });
+            // }, 100000);
+        });
+
+    </script>
+
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">Memories</div>
+</div>
+
+<div class="content">
+    <div class="memories">
+        <div class="memoryBox"></div>
+        <!-- 显示记忆详情-->
+        <div class="memoryDetail" style="display: none;">
+            <div class="LImage">
+                <img th:src="@{/images/pc03.jpg}" src="images/pc03.jpg" alt=""/>
+            </div>
+            <div class="RInformation">
+                <div class="exit"></div>
+                <div class="container">
+                    <textarea name="description" >That day, I Remberer, </textarea>
+                </div>
+                <div class="shareTo">
+                    <span>Share On: </span>
+                    <a href="#"><p>QQ</p></a>
+                    <a href="#"><p>微信</p></a>
+                    <a href="#"><p>微博</p></a>
+                </div>
+            </div>
+        </div>
+        <!--        <div class="memory"></div>-->
+    </div>
+
+    <div class="addMemory"></div>
+    <!-- 添加记忆，默认隐藏-->
+    <div class="addMemoryForm" style="display: none;">
+        <form th:action="@{/memory/addMemory}" action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>添加一段记忆：</legend>
+                <div class="exit"></div>
+                <p>
+                    <label class="target">图片信息: &nbsp;</label>
+                    <input type="file" id="memory_pic" name="memory_pic"/>
+                </p>
+                <p>
+                    <label class="target" for="description">描述信息: &nbsp;</label>
+                    <!--        <input type="text" id="description" name="description">-->
+                    <textarea id="description" name="description"></textarea>
+                </p>
+                <p>
+                    <label class="target" for="moment">产生时刻: &nbsp;</label>
+                    <input type="datetime" id="moment" name="moment" readonly="readonly"/>
+                </p>
+                <p>
+                    <input type="submit" value="提交"/>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+
+</div>
+
+<div class="footer">
+    <!--<div class="music">-->
+        <!--<audio th:src="@{/images/audio.mp3}" src="images/audio.mp3" controls="controls" loop="loop" autoplay="autoplay"></audio>-->
+    <!--</div>-->
+    <div class="wrap">
+        <a href="#">关于我们</a>
+        <a href="#">了解我们</a>
+        <a href="#">联系我们</a>
+        <a href="#">加入我们</a>
+        <a href="#">帮助中心</a>
+        <span class="copyright">@ copyright --zzh wl wlx</span>
+    </div>
+</div>
+
+</body>
+</html>

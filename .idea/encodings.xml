@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-config-3344" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-consumer-feign-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-consumer-hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-eureka-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-memory-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-provider-memory-hystrix-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-provider-user-hystrix-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-user-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memories-zuul-gateway-9527" charset="UTF-8" />
+  </component>
+</project>

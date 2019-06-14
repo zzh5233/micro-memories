@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>记忆列表</title>
+    <style>
+        table{
+            border: 1px solid #000;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+记忆列表：
+<table>
+    <tr>
+        <td>memoryId</td>
+        <td>图片信息</td>
+        <td>记忆描述</td>
+        <td>产生时刻</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="memory:${memoryList}">
+        <td th:text="${memory.memoryId}"></td>
+        <td><img th:src="@{'/pic/'+${memory.picture}}" width="100" height="100"/></td>
+        <td th:text="${memory.description}"></td>
+        <td th:text="${#dates.format(memory.moment, 'yyyy-MM-dd HH:mm:ss')}" ></td>
+        <td>
+            <a th:href="@{'/memory/getById/'+${memory.memoryId}}">查询</a>
+            <a th:href="@{'/memory/update/'+${memory.memoryId}}">修改</a>
+            <a th:href="@{'/memory/delete/'+${memory.memoryId}}">删除</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

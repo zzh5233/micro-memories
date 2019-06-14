@@ -1,0 +1,70 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+
+.content{
+    /*width: 800px;*/
+    /*height: 400px;*/
+    margin-left: 150px;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow:hidden
+}
+.content .LImage{
+    float: left;
+    /*width: 55%;*/
+    margin-bottom:-10000px;
+    padding-bottom:10000px;
+    background-color: #000001;
+    /*border-top-left-radius: 10px;*/
+    /*border-bottom-left-radius: 10px;*/
+
+}
+.content .LImage img{
+    margin: 5px;
+}
+.content .RInformation{
+    float: left;
+    /*width: 45%;*/
+    margin-bottom:-10000px;
+    padding-bottom:10000px;
+    background-color: #000001;
+    /*border-top-right-radius: 10px;*/
+    /*border-bottom-right-radius: 10px;*/
+}
+.content .RInformation .exit{
+    float: right;
+    width: 60px;
+    height: 44px;
+    background: url("../images/exit1.png") no-repeat -7px -5px;
+}
+.content .RInformation .container{
+    margin-left: 10px;
+    margin-top: 50px;
+    /*background-color: slategrey;*/
+}
+.content .RInformation .container textarea{
+    width: 336px; /* 比例？？*/
+    height: 280px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-indent: 2em;
+    resize: none;
+    outline: none;
+    font: 14px "微软雅黑";
+}
+.content .RInformation .shareTo{
+    color: #464646;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    /*background-color: rebeccapurple;*/
+}
+.content .RInformation .shareTo a{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+    outline: 0;
+    color: #464646;
+}
+.content .RInformation .shareTo a:first-of-type{
+    margin-left: 5px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>memory</title>
+    <link rel="stylesheet" th:href="@{/css/memory.css}" href="css/memory.css"/>
+    <script th:src="@{/js/jquery-1.12.4.js}" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" th:inline="javascript">
+         $(function () {
+             $(".exit").mouseenter(function () {
+                 $(".exit").css("width","66px").css("height","47px");
+                 $(".exit").css("background","url([[@/images/exit2.png]]) no-repeat -9px -2px");
+             });
+
+             $(".exit").mouseleave(function () {
+                 $(".exit").css("width","60px").css("height","44px");
+                 $(".exit").css("background","url([[@/images/exit1.png]]) no-repeat -7px -5px");
+             });
+             $(".exit").click(function () { //关闭
+                 $(".content").css("display","none");
+             });
+         });
+    </script>
+</head>
+<body>
+<div class="header"></div>
+<div class="content">
+    <div class="LImage">
+        <!--<img th:if="${memory.picture != null }" th:src="@{/pic/memory.picture}" src="images/pc03.jpg"/>-->
+        <!--/pic/c94c4305-89ba-4143-9e50-f6a7b7051ab8.jpg-->
+        <img th:src="@{'/pic/'+${memory.picture}}" src="images/pc03.jpg"/>
+    </div>
+    <div class="RInformation">
+        <div class="exit"></div>
+        <div class="container">
+            <textarea name="description" th:text="'That day, I Remberer,'+${memory.description}" readonly="readonly">That day, I Remberer, </textarea>
+        </div>
+        <div class="shareTo">
+            <span>Share On: </span>
+            <a href="#"><p>QQ</p></a>
+            <a href="#"><p>微信</p></a>
+            <a href="#"><p>微博</p></a>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+
+form{
+    width: 500px;
+    /*height: 400px;*/
+    /*background-color: cadetblue;*/
+    /*border: 1px solid #000;*/
+    margin: 100px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+form legend{
+    font-size: 16px;
+    border-radius: 5px;
+}
+form p{
+    font-size: 14px;
+    margin: 10px 5px;
+}
+form textarea[id="description"]{
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: rosybrown;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-indent: 2em;
+    resize: none;
+    outline: none;
+}
+
+form input[type="file"]{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: url("../images/from_desktop.png") no-repeat 0 0;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+form input[type="datetime"]{
+    width: 400px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+form input[type="submit"]{
+    width: 80px;
+    height: 30px;
+    background-color: cadetblue;
+    text-align: center;
+    text-height: 30px;
+    font-size: 14px;
+    float: right;
+    right: 20px;
+}

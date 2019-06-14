@@ -1,0 +1,78 @@
+.addMemoryForm{
+    /*display: none;*/
+    position: relative;
+}
+.addMemoryForm form{
+    float: left;
+    width: 500px;
+    /*height: 400px;*/
+    /*background-color: cadetblue;*/
+    border: 1px solid #000;
+    margin: 0 auto ;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #b6b9bc;
+}
+.addMemoryForm form .exit{
+    float: right;
+    /*width: 60px;*/
+    /*height: 44px;*/
+    /*background: url("../images/exit1.png") no-repeat -7px -5px;*/
+    /*background-color: #b6b9bc;*/
+    color: #b6b9bc;
+    line-height: 20px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    padding: 2px;
+}
+.addMemoryForm form .exit::before{
+    content: "\2716";
+}
+.addMemoryForm form legend{
+    font-size: 16px;
+    border-radius: 5px;
+}
+.addMemoryForm form p{
+    font-size: 14px;
+    margin: 10px 5px;
+}
+.addMemoryForm form textarea[id="description"]{
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: #b6b9bc; /*rosybrown*/
+    /*border: 1px solid #b6b9bc;*/
+    border-radius: 20px;
+    text-indent: 2em;
+    resize: none;
+    outline: none;
+}
+.addMemoryForm form input[type="file"]{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: url("../images/from_desktop.png") no-repeat 0 0;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.addMemoryForm form input[type="datetime"]{
+    width: 400px;
+    height: 20px;
+    /*border: 1px solid #b6b9bc;*/
+    background: #b6b9bc;
+    border-radius: 5px;
+    outline: none;
+}
+.addMemoryForm form input[type="submit"]{
+    width: 80px;
+    height: 30px;
+    background-color: #b6b9bc; /*cadetblue*/
+    text-align: center;
+    text-height: 30px;
+    font-size: 14px;
+    float: right;
+    right: 20px;
+}

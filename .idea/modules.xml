@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/memories.iml" filepath="$PROJECT_DIR$/memories.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-api/memories-api.iml" filepath="$PROJECT_DIR$/memories-api/memories-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-config-3344/memories-config-3344.iml" filepath="$PROJECT_DIR$/memories-config-3344/memories-config-3344.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-consumer-feign-80/memories-consumer-feign-80.iml" filepath="$PROJECT_DIR$/memories-consumer-feign-80/memories-consumer-feign-80.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-consumer-hystrix-dashboard/memories-consumer-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/memories-consumer-hystrix-dashboard/memories-consumer-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-eureka-7001/memories-eureka-7001.iml" filepath="$PROJECT_DIR$/memories-eureka-7001/memories-eureka-7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-memory-8001/memories-memory-8001.iml" filepath="$PROJECT_DIR$/memories-memory-8001/memories-memory-8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-provider-memory-hystrix-8001/memories-provider-memory-hystrix-8001.iml" filepath="$PROJECT_DIR$/memories-provider-memory-hystrix-8001/memories-provider-memory-hystrix-8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-provider-user-hystrix-8002/memories-provider-user-hystrix-8002.iml" filepath="$PROJECT_DIR$/memories-provider-user-hystrix-8002/memories-provider-user-hystrix-8002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-user-8002/memories-user-8002.iml" filepath="$PROJECT_DIR$/memories-user-8002/memories-user-8002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memories-zuul-gateway-9527/memories-zuul-gateway-9527.iml" filepath="$PROJECT_DIR$/memories-zuul-gateway-9527/memories-zuul-gateway-9527.iml" />
+    </modules>
+  </component>
+</project>
